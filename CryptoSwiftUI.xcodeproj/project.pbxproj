@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		E5777767298FD9C100574F1B /* CryptoSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5777766298FD9C100574F1B /* CryptoSwiftUIApp.swift */; };
-		E5777769298FD9C100574F1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5777768298FD9C100574F1B /* ContentView.swift */; };
+		E5777769298FD9C100574F1B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5777768298FD9C100574F1B /* MainView.swift */; };
 		E577776B298FD9C400574F1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E577776A298FD9C400574F1B /* Assets.xcassets */; };
 		E577776E298FD9C400574F1B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E577776D298FD9C400574F1B /* Preview Assets.xcassets */; };
+		E577777A298FDAF000574F1B /* CryptoCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5777779298FDAF000574F1B /* CryptoCurrency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E5777763298FD9C100574F1B /* CryptoSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5777766298FD9C100574F1B /* CryptoSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoSwiftUIApp.swift; sourceTree = "<group>"; };
-		E5777768298FD9C100574F1B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E5777768298FD9C100574F1B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E577776A298FD9C400574F1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E577776D298FD9C400574F1B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E5777779298FDAF000574F1B /* CryptoCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,11 @@
 		E5777765298FD9C100574F1B /* CryptoSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				E5777778298FDA5800574F1B /* Service */,
+				E5777777298FDA4C00574F1B /* Model */,
+				E5777776298FDA4300574F1B /* ViewModel */,
+				E5777774298FDA1E00574F1B /* View */,
 				E5777766298FD9C100574F1B /* CryptoSwiftUIApp.swift */,
-				E5777768298FD9C100574F1B /* ContentView.swift */,
 				E577776A298FD9C400574F1B /* Assets.xcassets */,
 				E577776C298FD9C400574F1B /* Preview Content */,
 			);
@@ -65,6 +70,36 @@
 				E577776D298FD9C400574F1B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E5777774298FDA1E00574F1B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E5777768298FD9C100574F1B /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E5777776298FDA4300574F1B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E5777777298FDA4C00574F1B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E5777779298FDAF000574F1B /* CryptoCurrency.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E5777778298FDA5800574F1B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +172,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5777769298FD9C100574F1B /* ContentView.swift in Sources */,
+				E5777769298FD9C100574F1B /* MainView.swift in Sources */,
+				E577777A298FDAF000574F1B /* CryptoCurrency.swift in Sources */,
 				E5777767298FD9C100574F1B /* CryptoSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
